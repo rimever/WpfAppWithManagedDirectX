@@ -19,8 +19,7 @@ Global
 		{B9AC0A22-4BE8-47BE-A870-7FB427F58494}.Debug|x86.Build.0 = Debug|Any CPU
 		{B9AC0A22-4BE8-47BE-A870-7FB427F58494}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9AC0A22-4BE8-47BE-A870-7FB427F58494}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B9AC0A22-4BE8-47BE-A870-7FB427F58494}.Release|x86.ActiveCfg = Release|x86
-		{B9AC0A22-4BE8-47BE-A870-7FB427F58494}.Release|x86.Build.0 = Release|x86
+		{B9AC0A22-4BE8-47BE-A870-7FB427F58494}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
