@@ -23,7 +23,6 @@ namespace WpfApp1
         /// </summary>
         private CustomVertex.PositionColored[] vertices = new CustomVertex.PositionColored[3];
 
-        private Timer _timer;
 
 
         /// <summary>
@@ -40,7 +39,6 @@ namespace WpfApp1
         public GraphicsDeviceControl()
         {
             InitializeComponent();
-            _timer = new Timer(state => Draw(), null, TimeSpan.Zero, TimeSpan.FromMilliseconds(1000 / 30));
         }
 
         /// <summary>
@@ -117,12 +115,6 @@ namespace WpfApp1
                 {
                     this.device.Dispose();
                 }
-
-                if (_timer != null)
-                {
-                    _timer.Change(-1, int.MaxValue);
-                    _timer.Dispose();
-                }
             }
 
             base.Dispose(disposing);
@@ -141,7 +133,7 @@ namespace WpfApp1
         /// <summary>
         /// 描画
         /// </summary>
-        private void Draw()
+        public void Draw()
         {
             if (this.device == null)
             {

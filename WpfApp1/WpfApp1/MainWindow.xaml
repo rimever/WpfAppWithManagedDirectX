@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <WindowsFormsHost Name="windowsFormsHostManagedDirectX" Width="300" Height="300"
-                             HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions><ColumnDefinition Width="300"/><ColumnDefinition Width="*"></ColumnDefinition></Grid.ColumnDefinitions>
+        <WindowsFormsHost Name="windowsFormsHostManagedDirectX" Grid.Column="0">
             <local:GraphicsDeviceControl x:Name="GraphicsDeviceControl" />
         </WindowsFormsHost>
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <TextBlock x:Name="TextBlockMouse"/>
+            <TextBlock x:Name="TextBlockKeyboard"/>
+        </StackPanel>
     </Grid>
 </Window>
